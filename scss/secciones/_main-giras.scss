@@ -1,0 +1,53 @@
+.giras {
+    table {
+        grid-area: table;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        border: black 3px solid;
+        padding: 50px;
+        background-color: burlywood;
+        margin-top: ($medidas2)-100;
+
+        &:hover {
+            background-color: $color1;
+        }
+    }
+
+    th {
+        border: black 3px solid;
+        padding: $medidas2/10;
+
+        &:hover {
+            @extend %backgroundColorTable;
+        }
+    }
+
+    td {
+        border: black 3px solid;
+        padding: 20px;
+
+        &:hover {
+            @extend %backgroundColorTable;
+        }
+    }
+
+    .sectionGiras1 {
+        grid-area: sectionGiras1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    img {
+        height: $medidas1/2;
+        margin: 100px 0;
+
+        &:hover {
+            transition: 3s;
+            transform: scale(2, 1.2);
+        }
+    }
+}

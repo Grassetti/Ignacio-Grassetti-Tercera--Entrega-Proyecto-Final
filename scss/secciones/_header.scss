@@ -1,0 +1,40 @@
+header {
+    nav {
+        background-color: #b23136;
+        height: 20%; 
+
+        &:hover {
+            background-color: rgb(232, 188, 10);
+        }
+    }
+    .nav-link{
+        color: black;
+        font-size: 1.5rem;
+    }
+    .navbar-brand{
+        color: black;
+        font-size: 1.5rem;
+    }
+    .nav-link.active{
+        background-color: #e8ab12;
+        color: black;
+        font-size: 1.5rem;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+    
+        &:hover {
+            transition: 5s;
+            width: 200px;
+            height: 200px;
+        }
+    }
+    a{
+        &:hover {
+            transition: 3s;
+            transform: rotate(30deg);
+        }
+    }
+}

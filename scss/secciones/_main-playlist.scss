@@ -1,0 +1,115 @@
+.playlist {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    
+    .s-1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .s-2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+        
+    .headerPlaylist {
+        grid-area: headerPlaylist;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 30px;
+        font-family: 'Anton', sans-serif;
+        margin: 50px 0;
+    }
+        
+    .sectionPlaylist1 {
+        grid-area: sectionPlaylist1;
+        display: flex;
+        flex-direction: column;
+        animation-name: animate__heartBeat;
+    }
+    
+    h2 {
+        @extend %sectionPlaylistH2;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 2.5rem;
+        font-size: 2rem;
+    }
+    
+    .div2 {
+        display: flex;
+        flex-direction: row-reverse;
+        animation-name: animate__shakeX;
+    }
+    
+    form {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+    
+    input{
+        &:hover {
+            transition: 3s;
+            transform: scale(3, 3);
+        }
+    }    
+    .sectionPlaylist2 {
+        grid-area: sectionPlaylist2;
+        display: flex;
+        flex-direction: column;
+        animation-name: animate__heartBeat;
+    }
+    
+    .div {
+        margin-right: 10px;
+        animation-name: animate__shakeX;
+    }
+    
+    .sectionPlaylist2 div img {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+        
+    .sectionPlaylist3 {
+        grid-area: sectionPlaylist3;
+        display: flex;
+        flex-direction: column;
+        animation-name: animate__heartBeat;
+    }
+    
+    .div2 {
+        display: flex;
+        flex-direction: row-reverse;
+        animation-name: animate__shakeX;
+    }
+    
+    .sectionPlaylist4 {
+        grid-area: sectionPlaylist4;
+        display: flex;
+        flex-direction: column;
+        animation-name: animate__heartBeat;
+    }
+    
+    .div2 {
+        animation-name: animate__shakeX;
+        margin-right: 10px;
+    }
+    
+    div img {
+        display: flex;
+        flex-direction: row-reverse;
+        height: 500px;
+        width: 500px;
+        margin: 0;
+    }
+}

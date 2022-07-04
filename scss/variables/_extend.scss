@@ -1,0 +1,30 @@
+%linkRedes{
+    display: flex;
+    justify-content: space-around;
+    width: $medidas1/4;
+}
+
+%backgroundColorTable{
+    background-color: red;
+}
+
+%sectionPlaylistH2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 3rem;
+    font-family: 'Blaka Hollow', cursive;
+}
+
+%sectionAcercadeguns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin section ($margin, $fontSize:3rem) {
+    margin: $margin;
+    font-size: $fontSize;
+}

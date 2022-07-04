@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0; }
+  
+  footer a:hover {
+    display: flex;
+    justify-content: space-around;
+    width: 350px; }
+  
+  .giras th:hover, .giras td:hover {
+    background-color: red; }
+  
+  .playlist h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 3rem;
+    font-family: 'Blaka Hollow', cursive; }
+  
+  .acercaDe .sectionAcercaDeGuns1, .acercaDe .sectionAcercaDeGuns2, .acercaDe .sectionAcercaDeGuns3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  
+  header nav {
+    background-color: #b23136;
+    height: 20%; }
+    header nav:hover {
+      background-color: #e8bc0a; }
+  
+  header .nav-link {
+    color: black;
+    font-size: 1.5rem; }
+  
+  header .navbar-brand {
+    color: black;
+    font-size: 1.5rem; }
+  
+  header .nav-link.active {
+    background-color: #e8ab12;
+    color: black;
+    font-size: 1.5rem; }
+  
+  header img {
+    width: 100px;
+    height: 100px;
+    padding: 10px; }
+    header img:hover {
+      transition: 5s;
+      width: 200px;
+      height: 200px; }
+  
+  header a:hover {
+    transition: 3s;
+    transform: rotate(30deg); }
+  
+  .gridIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .1fr 1fr 1fr .1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "section1 section1"
+   "section2 section2"
+   "section3 section3"
+   "section4 section4"
+   "footer footer";
+    background-image: linear-gradient(#EDE3E4, grey, #444343); }
+  
+  .gridGiras {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .2r .15fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "table"
+   "sectionGiras1"
+   "footer";
+    background-image: linear-gradient(#EDE3E4, grey, #444343); }
+  
+  .gridPlaylist {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr 1fr .2fr;
+    grid-auto-flow: row;
+    grid-template-areas: "main"
+   "main"
+   "main"
+   "footer";
+    align-items: stretch;
+    justify-items: stretch; }
+  
+  .gridAcercaDeGuns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    grid-template-areas: "sectionAcercaDeGuns1 sectionAcercaDeGuns1 sectionAcercaDeGuns1"
+   "sectionAcercaDeGuns2 sectionAcercaDeGuns2 sectionAcercaDeGuns2"
+   "sectionAcercaDeGuns3 sectionAcercaDeGuns3 sectionAcercaDeGuns3"; }
+  
+  .gridContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "sectionContacto1 sectionContacto1 SectionContacto2 SectionContacto2"
+   "sectionContacto1 sectionContacto1 SectionContacto2 SectionContacto2"
+   "sectionContacto1 sectionContacto1 SectionContacto2 SectionContacto2";
+    background-image: linear-gradient(#EDE3E4, grey, #444343); }
+  
+  @media (max-width: 576px) {
+    .gridIndex {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: .5fr 2fr 2fr 2fr;
+      grid-template-areas: "section1 section1 section1 section1 section1"
+   "section2 section2 section2 section2 section2"
+   "section3 section3 section3 section3 section3"
+   "section4 section4 section4 section4 section4"; }
+    .index div {
+      flex-wrap: wrap !important; }
+    .index img {
+      max-width: 500px; }
+    .gridGiras {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 2fr 3fr;
+      grid-auto-flow: row;
+      grid-template-areas: "table table table table table"
+   "sectionGiras1 sectionGiras1 sectionGiras1 sectionGiras1 sectionGiras1"; }
+    .gridGiras .table {
+      width: 576px; }
+    .gridGiras .table table td {
+      padding: 5px; }
+    .gridGiras .sectionGiras1 img {
+      width: 400px; }
+      .gridGiras .sectionGiras1 img:hover {
+        transition: 3s;
+        transform: scale(1.2, 1.2); }
+    .gridPlaylist {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 8fr 8fr 8fr;
+      grid-template-areas: "main main main"
+   "main main main"
+   "main main main"; }
+    .main {
+      grid-area: main; }
+    .s-1 {
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-width: 576px;
+      padding: 100px; }
+    .s-2 {
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-width: 576px;
+      padding: 0 100px; }
+    .playlist main div div ul {
+      font-size: 1rem; }
+    .Playlist main div div form {
+      font-size: 1rem; }
+    footer {
+      grid-area: footer;
+      max-width: 576px; }
+    footer a img {
+      height: 30px;
+      width: 30px; }
+    .gridAcercaDeGuns {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: .5fr .5fr .5fr;
+      grid-auto-flow: row;
+      grid-template-areas: "sectionAcercaDeGuns1 sectionAcercaDeGuns1 sectionAcercaDeGuns1 sectionAcercaDeGuns1 sectionAcercaDeGuns1"
+   "sectionAcercaDeGuns2 sectionAcercaDeGuns2 sectionAcercaDeGuns2 sectionAcercaDeGuns2 sectionAcercaDeGuns2"
+   "sectionAcercaDeGuns3 sectionAcercaDeGuns3 sectionAcercaDeGuns3 sectionAcercaDeGuns3 sectionAcercaDeGuns3"; }
+    .acercaDe div h2 {
+      font-size: 2rem;
+      margin: 3rem; }
+    .acercaDe div ol {
+      padding: 5rem 0;
+      max-height: 1000px;
+      margin: 0 2rem; }
+    .gridContacto {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 4fr 4fr 4fr;
+      grid-auto-flow: row;
+      grid-template-areas: "sectionContacto2 sectionContacto2 sectionContacto2"
+   "sectionContacto2 sectionContacto2 sectionContacto2"
+   "sectionContacto2 sectionContacto2 sectionContacto2"; }
+    .contacto form {
+      max-width: 500px; }
+    .contacto div img {
+      width: 576px; } }
+  
+  .index .section1 {
+    grid-area: section1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Blaka Hollow', cursive;
+    margin: 50px 0;
+    font-size: 3rem;
+    animation-name: animate__tada; }
+  
+  .index .section2 {
+    grid-area: section2;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: nowrap; }
+  
+  .index img {
+    height: 400px;
+    width: 700px;
+    margin-bottom: 20px;
+    padding: 2rem; }
+  
+  .index .section3 {
+    grid-area: section3;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: nowrap; }
+  
+  .index .section4 {
+    grid-area: section4;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: nowrap; }
+  
+  .giras table {
+    grid-area: table;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: black 3px solid;
+    padding: 50px;
+    background-color: burlywood;
+    margin-top: 100px; }
+    .giras table:hover {
+      background-color: grey; }
+  
+  .giras th {
+    border: black 3px solid;
+    padding: 20px; }
+  
+  .giras td {
+    border: black 3px solid;
+    padding: 20px; }
+  
+  .giras .sectionGiras1 {
+    grid-area: sectionGiras1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; }
+  
+  .giras img {
+    height: 700px;
+    margin: 100px 0; }
+    .giras img:hover {
+      transition: 3s;
+      transform: scale(2, 1.2); }
+  
+  .playlist {
+    grid-area: main;
+    display: flex;
+    flex-direction: column; }
+    .playlist .s-1 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+    .playlist .s-2 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+    .playlist .headerPlaylist {
+      grid-area: headerPlaylist;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      font-size: 30px;
+      font-family: 'Anton', sans-serif;
+      margin: 50px 0; }
+    .playlist .sectionPlaylist1 {
+      grid-area: sectionPlaylist1;
+      display: flex;
+      flex-direction: column;
+      animation-name: animate__heartBeat; }
+    .playlist ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 2.5rem;
+      font-size: 2rem; }
+    .playlist .div2 {
+      display: flex;
+      flex-direction: row-reverse;
+      animation-name: animate__shakeX; }
+    .playlist form {
+      font-size: 2rem;
+      margin-bottom: 50px; }
+    .playlist input:hover {
+      transition: 3s;
+      transform: scale(3, 3); }
+    .playlist .sectionPlaylist2 {
+      grid-area: sectionPlaylist2;
+      display: flex;
+      flex-direction: column;
+      animation-name: animate__heartBeat; }
+    .playlist .div {
+      margin-right: 10px;
+      animation-name: animate__shakeX; }
+    .playlist .sectionPlaylist2 div img {
+      display: flex;
+      flex-direction: row-reverse; }
+    .playlist .sectionPlaylist3 {
+      grid-area: sectionPlaylist3;
+      display: flex;
+      flex-direction: column;
+      animation-name: animate__heartBeat; }
+    .playlist .div2 {
+      display: flex;
+      flex-direction: row-reverse;
+      animation-name: animate__shakeX; }
+    .playlist .sectionPlaylist4 {
+      grid-area: sectionPlaylist4;
+      display: flex;
+      flex-direction: column;
+      animation-name: animate__heartBeat; }
+    .playlist .div2 {
+      animation-name: animate__shakeX;
+      margin-right: 10px; }
+    .playlist div img {
+      display: flex;
+      flex-direction: row-reverse;
+      height: 500px;
+      width: 500px;
+      margin: 0; }
+  
+  .acercaDe .sectionAcercaDeGuns1 {
+    grid-area: sectionAcercaDeGuns1; }
+  
+  .acercaDe h2 {
+    margin-top: .5rem;
+    font-size: 70px;
+    font-family: 'Blaka Hollow', cursive; }
+  
+  .acercaDe p {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1.5rem 2.5rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+    background-color: #282525;
+    color: white; }
+  
+  .acercaDe .sectionAcercaDeGuns2 {
+    grid-area: sectionAcercaDeGuns2; }
+  
+  .acercaDe ol {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1.5rem 2.5rem;
+    padding: 1.5rem 430px;
+    border-radius: 20px;
+    background-color: #282525;
+    color: white;
+    list-style: none; }
+  
+  .acercaDe .sectionAcercaDeGuns3 {
+    grid-area: sectionAcercaDeGuns3; }
+  
+  .contacto .sectionContacto1 {
+    grid-area: sectionContacto1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  
+  .contacto img {
+    width: 600px; }
+  
+  .contacto .sectionContacto2 {
+    grid-area: SectionContacto2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+  
+  .contacto form {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 4rem 1.5rem;
+    border-radius: 20px;
+    background-color: #282525;
+    color: #a4a2a2; }
+    .contacto form:hover {
+      transition: 3s;
+      color: #282525;
+      background-color: #a4a2a2; }
+  
+  .contacto input {
+    margin: 1rem; }
+    .contacto input:hover {
+      transition: 3s;
+      transform: scale(1.5, 1.5);
+      background-color: black;
+      color: #a4a2a2; }
+  
+  .contacto textarea {
+    width: 200px;
+    height: 50px;
+    margin: 1rem; }
+    .contacto textarea:hover {
+      transition: 3s;
+      transform: scale(1.5, 1.5);
+      background-color: black;
+      color: #a4a2a2; }
+  
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #252627;
+    height: 20%; }
+    footer a {
+      display: flex;
+      justify-content: space-around;
+      width: 350px; }
+      footer a:hover {
+        transition: 3s;
+        transform: scale(2, 1.5); }
+    footer img {
+      width: 50px;
+      height: 50px;
+      margin: 20px; }
+  
+  body {
+    background-image: linear-gradient(#EDE3E4, grey, #444343); }
+  

@@ -1,0 +1,43 @@
+.acercaDe {
+    .sectionAcercaDeGuns1 {
+        grid-area: sectionAcercaDeGuns1;
+        @extend %sectionAcercadeguns;
+    }
+
+    h2 {
+        margin-top: .5rem;
+        font-size: 70px;
+        font-family: 'Blaka Hollow', cursive;
+    }
+
+    p {
+        font-size: 2rem;
+        text-align: center;
+        margin: 1.5rem 2.5rem;
+        padding: 1.5rem;
+        border-radius: 20px;
+        background-color: rgb(40, 37, 37);
+        color: white;
+    }
+
+    .sectionAcercaDeGuns2 {
+        grid-area: sectionAcercaDeGuns2;
+        @extend %sectionAcercadeguns;
+    }
+
+    ol {
+        font-size: 2rem;
+        text-align: center;
+        margin: 1.5rem 2.5rem;
+        padding: 1.5rem 430px;
+        border-radius: 20px;
+        background-color: rgb(40, 37, 37);
+        color: white;
+        list-style: none;
+    }
+
+    .sectionAcercaDeGuns3 {
+        grid-area: sectionAcercaDeGuns3;
+        @extend %sectionAcercadeguns;
+    }
+}
