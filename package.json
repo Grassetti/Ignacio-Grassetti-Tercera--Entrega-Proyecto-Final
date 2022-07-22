@@ -1,12 +1,11 @@
 {
-  "dependencies": {
-    "node-sass": "^7.0.1",
-    "nodemon": "^2.0.18"
-  },
   "name": "tercera-entrega-proyecto-final-ignacio-grassetti",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/main.scss css/style.css",
@@ -14,5 +13,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grassetti/Ignacio-Grassetti-Tercera--Entrega-Proyecto-Final.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Grassetti/Ignacio-Grassetti-Tercera--Entrega-Proyecto-Final/issues"
+  },
+  "homepage": "https://github.com/Grassetti/Ignacio-Grassetti-Tercera--Entrega-Proyecto-Final#readme",
   "description": ""
 }

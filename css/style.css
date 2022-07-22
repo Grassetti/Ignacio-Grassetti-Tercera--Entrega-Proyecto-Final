@@ -1,456 +1,439 @@
 * {
-    margin: 0;
-    padding: 0; }
-  
-  footer a:hover {
+  margin: 0;
+  padding: 0; }
+
+footer a:hover {
+  display: flex;
+  justify-content: space-around;
+  width: 350px; }
+
+.giras th:hover, .giras td:hover {
+  background-color: red; }
+
+.playlist h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 3rem;
+  font-family: 'Blaka Hollow', cursive; }
+
+.acercaDe .sectionAcercaDeGuns1, .acercaDe .sectionAcercaDeGuns2, .acercaDe .sectionAcercaDeGuns3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+header nav {
+  background-color: #aa5e60;
+  background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M82.42 180h-1.415L0 98.995v-2.827L6.167 90 0 83.833V81.004L81.005 0h2.827L90 6.167 96.167 0H98.996L180 81.005v2.827L173.833 90 180 96.167V98.996L98.995 180h-2.827L90 173.833 83.833 180H82.42zm0-1.414L1.413 97.58 8.994 90l-7.58-7.58L82.42 1.413 90 8.994l7.58-7.58 81.006 81.005-7.58 7.58 7.58 7.58-81.005 81.006-7.58-7.58-7.58 7.58zM175.196 0h-25.832c1.033 2.924 2.616 5.59 4.625 7.868C152.145 9.682 151 12.208 151 15c0 5.523 4.477 10 10 10 1.657 0 3 1.343 3 3v4h16V0h-4.803c.51.883.803 1.907.803 3 0 3.314-2.686 6-6 6s-6-2.686-6-6c0-1.093.292-2.117.803-3h10.394-13.685C161.18.938 161 1.948 161 3v4c-4.418 0-8 3.582-8 8s3.582 8 8 8c2.76 0 5 2.24 5 5v2h4v-4h2v4h4v-4h2v4h2V0h-4.803zm-15.783 0c-.27.954-.414 1.96-.414 3v2.2c-1.25.254-2.414.74-3.447 1.412-1.716-1.93-3.098-4.164-4.054-6.612h7.914zM180 17h-3l2.143-10H180v10zm-30.635 163c-.884-2.502-1.365-5.195-1.365-8 0-13.255 10.748-24 23.99-24H180v32h-30.635zm12.147 0c.5-1.416 1.345-2.67 2.434-3.66l-1.345-1.48c-1.498 1.364-2.62 3.136-3.186 5.14H151.5c-.97-2.48-1.5-5.177-1.5-8 0-12.15 9.84-22 22-22h8v30h-18.488zm13.685 0c-1.037-1.793-2.976-3-5.197-3-2.22 0-4.16 1.207-5.197 3h10.394zM0 148h8.01C21.26 148 32 158.742 32 172c0 2.805-.48 5.498-1.366 8H0v-32zm0 2h8c12.15 0 22 9.847 22 22 0 2.822-.53 5.52-1.5 8h-7.914c-.567-2.004-1.688-3.776-3.187-5.14l-1.346 1.48c1.09.99 1.933 2.244 2.434 3.66H0v-30zm15.197 30c-1.037-1.793-2.976-3-5.197-3-2.22 0-4.16 1.207-5.197 3h10.394zM0 32h16v-4c0-1.657 1.343-3 3-3 5.523 0 10-4.477 10-10 0-2.794-1.145-5.32-2.992-7.134C28.018 5.586 29.6 2.924 30.634 0H0v32zm0-2h2v-4h2v4h4v-4h2v4h4v-2c0-2.76 2.24-5 5-5 4.418 0 8-3.582 8-8s-3.582-8-8-8V3c0-1.052-.18-2.062-.512-3H0v30zM28.5 0c-.954 2.448-2.335 4.683-4.05 6.613-1.035-.672-2.2-1.16-3.45-1.413V3c0-1.04-.144-2.046-.414-3H28.5zM0 17h3L.857 7H0v10zM15.197 0c.51.883.803 1.907.803 3 0 3.314-2.686 6-6 6S4 6.314 4 3c0-1.093.292-2.117.803-3h10.394zM109 115c-1.657 0-3 1.343-3 3v4H74v-4c0-1.657-1.343-3-3-3-5.523 0-10-4.477-10-10 0-2.793 1.145-5.318 2.99-7.132C60.262 93.638 58 88.084 58 82c0-13.255 10.748-24 23.99-24h16.02C111.26 58 122 68.742 122 82c0 6.082-2.263 11.636-5.992 15.866C117.855 99.68 119 102.206 119 105c0 5.523-4.477 10-10 10zm0-2c-2.76 0-5 2.24-5 5v2h-4v-4h-2v4h-4v-4h-2v4h-4v-4h-2v4h-4v-4h-2v4h-4v-2c0-2.76-2.24-5-5-5-4.418 0-8-3.582-8-8s3.582-8 8-8v-4c0-2.64 1.136-5.013 2.946-6.66L72.6 84.86C70.39 86.874 69 89.775 69 93v2.2c-1.25.254-2.414.74-3.447 1.412C62.098 92.727 60 87.61 60 82c0-12.15 9.84-22 22-22h16c12.15 0 22 9.847 22 22 0 5.61-2.097 10.728-5.55 14.613-1.035-.672-2.2-1.16-3.45-1.413V93c0-3.226-1.39-6.127-3.6-8.14l-1.346 1.48C107.864 87.987 109 90.36 109 93v4c4.418 0 8 3.582 8 8s-3.582 8-8 8zM90.857 97L93 107h-6l2.143-10h1.714zM80 99c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm20 0c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6z' fill='%23b23136' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  height: 20%; }
+  header nav:hover {
+    background-color: #e8bc0a; }
+
+header .nav-link {
+  color: black;
+  font-size: 1.5rem; }
+
+header .navbar-brand {
+  color: black;
+  font-size: 1.5rem; }
+
+header .nav-link.active {
+  background-color: #e8ab12;
+  color: black;
+  font-size: 1.5rem; }
+
+header img {
+  width: 100px;
+  height: 100px;
+  padding: 10px; }
+  header img:hover {
+    transition: 5s;
+    width: 200px;
+    height: 200px; }
+
+header a:hover {
+  transition: 3s;
+  transform: rotate(30deg); }
+
+.gridIndex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: .1fr 1fr 1fr .1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "section1 section1" "section2 section2" "section3 section3" "section4 section4" "footer footer";
+  background-image: linear-gradient(#EDE3E4, grey, #444343); }
+
+.gridGiras {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr .2r .15fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "table" "sectionGiras1" "footer";
+  background-image: linear-gradient(#EDE3E4, grey, #444343); }
+
+.gridPlaylist {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 1fr 1fr .2fr;
+  grid-auto-flow: row;
+  grid-template-areas: "main" "main" "main" "footer";
+  align-items: stretch;
+  justify-items: stretch; }
+
+.gridAcercaDeGuns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  grid-template-areas: "sectionAcercaDeGuns1 sectionAcercaDeGuns1 sectionAcercaDeGuns1" "sectionAcercaDeGuns2 sectionAcercaDeGuns2 sectionAcercaDeGuns2" "sectionAcercaDeGuns3 sectionAcercaDeGuns3 sectionAcercaDeGuns3"; }
+
+.gridContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas: "sectionContacto1 sectionContacto1 SectionContacto2 SectionContacto2" "sectionContacto1 sectionContacto1 SectionContacto2 SectionContacto2" "sectionContacto1 sectionContacto1 SectionContacto2 SectionContacto2";
+  background-image: linear-gradient(#EDE3E4, grey, #444343); }
+
+@media (max-width: 576px) {
+  .gridIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr 2fr 2fr 2fr;
+    grid-template-areas: "section1 section1 section1 section1 section1" "section2 section2 section2 section2 section2" "section3 section3 section3 section3 section3" "section4 section4 section4 section4 section4"; }
+  .index div {
+    flex-wrap: wrap !important; }
+  .index img {
+    max-width: 500px; }
+  .gridGiras {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 3fr;
+    grid-auto-flow: row;
+    grid-template-areas: "table table table table table" "sectionGiras1 sectionGiras1 sectionGiras1 sectionGiras1 sectionGiras1"; }
+  .gridGiras .table {
+    width: 576px; }
+  .gridGiras .table table td {
+    padding: 5px; }
+  .gridGiras .sectionGiras1 img {
+    width: 400px; }
+    .gridGiras .sectionGiras1 img:hover {
+      transition: 3s;
+      transform: scale(1.2, 1.2); }
+  .gridPlaylist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 8fr 8fr 8fr;
+    grid-template-areas: "main main main" "main main main" "main main main"; }
+  .main {
+    grid-area: main; }
+  .s-1 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 576px;
+    padding: 100px; }
+  .s-2 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 576px;
+    padding: 0 100px; }
+  .playlist main div div ul {
+    font-size: 1rem; }
+  .Playlist main div div form {
+    font-size: 1rem; }
+  footer {
+    grid-area: footer;
+    max-width: 576px; }
+  footer a img {
+    height: 30px;
+    width: 30px; }
+  .gridAcercaDeGuns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr .5fr .5fr;
+    grid-auto-flow: row;
+    grid-template-areas: "sectionAcercaDeGuns1 sectionAcercaDeGuns1 sectionAcercaDeGuns1 sectionAcercaDeGuns1 sectionAcercaDeGuns1" "sectionAcercaDeGuns2 sectionAcercaDeGuns2 sectionAcercaDeGuns2 sectionAcercaDeGuns2 sectionAcercaDeGuns2" "sectionAcercaDeGuns3 sectionAcercaDeGuns3 sectionAcercaDeGuns3 sectionAcercaDeGuns3 sectionAcercaDeGuns3"; }
+  .acercaDe div h2 {
+    font-size: 2rem;
+    margin: 3rem; }
+  .acercaDe div ol {
+    padding: 5rem 0;
+    max-height: 1000px;
+    margin: 0 2rem; }
+  .gridContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4fr 4fr 4fr;
+    grid-auto-flow: row;
+    grid-template-areas: "sectionContacto2 sectionContacto2 sectionContacto2" "sectionContacto2 sectionContacto2 sectionContacto2" "sectionContacto2 sectionContacto2 sectionContacto2"; }
+  .contacto form {
+    max-width: 500px; }
+  .contacto div img {
+    width: 576px; } }
+
+.index .section1 {
+  grid-area: section1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  font-size: 3rem;
+  animation-name: animate__tada; }
+  .index .section1 h1 {
+    font-size: 8rem;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 0px -6px 0 #212121, 0px -6px 0 #212121, 0px 6px 0 #212121, 0px 6px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px -6px 0 #212121, 6px -6px 0 #212121, -6px 6px 0 #212121, 6px 6px 0 #212121; }
+
+.index .section2 {
+  grid-area: section2;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: nowrap; }
+
+.index img {
+  height: 400px;
+  width: 700px;
+  margin-bottom: 20px;
+  padding: 2rem; }
+
+.index .section3 {
+  grid-area: section3;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: nowrap; }
+
+.index .section4 {
+  grid-area: section4;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: nowrap; }
+
+.giras table {
+  grid-area: table;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: black 3px solid;
+  padding: 50px;
+  background-color: burlywood;
+  margin-top: 100px; }
+  .giras table:hover {
+    background-color: grey; }
+
+.giras th {
+  border: black 3px solid;
+  padding: 20px; }
+
+.giras td {
+  border: black 3px solid;
+  padding: 20px; }
+
+.giras .sectionGiras1 {
+  grid-area: sectionGiras1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; }
+
+.giras img {
+  height: 700px;
+  margin: 100px 0; }
+  .giras img:hover {
+    transition: 3s;
+    transform: scale(2, 1.2); }
+
+.playlist {
+  grid-area: main;
+  display: flex;
+  flex-direction: column; }
+  .playlist .s-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .playlist .s-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .playlist .headerPlaylist {
+    grid-area: headerPlaylist;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+    margin: 50px 0; }
+  .playlist .sectionPlaylist1 {
+    grid-area: sectionPlaylist1;
+    display: flex;
+    flex-direction: column;
+    animation-name: animate__heartBeat; }
+  .playlist ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2.5rem;
+    font-size: 2rem; }
+  .playlist .div2 {
+    display: flex;
+    flex-direction: row-reverse;
+    animation-name: animate__shakeX; }
+  .playlist form {
+    font-size: 2rem;
+    margin-bottom: 50px; }
+  .playlist input:hover {
+    transition: 3s;
+    transform: scale(3, 3); }
+  .playlist .sectionPlaylist2 {
+    grid-area: sectionPlaylist2;
+    display: flex;
+    flex-direction: column;
+    animation-name: animate__heartBeat; }
+  .playlist .div {
+    margin-right: 10px;
+    animation-name: animate__shakeX; }
+  .playlist .sectionPlaylist2 div img {
+    display: flex;
+    flex-direction: row-reverse; }
+  .playlist .sectionPlaylist3 {
+    grid-area: sectionPlaylist3;
+    display: flex;
+    flex-direction: column;
+    animation-name: animate__heartBeat; }
+  .playlist .div2 {
+    display: flex;
+    flex-direction: row-reverse;
+    animation-name: animate__shakeX; }
+  .playlist .sectionPlaylist4 {
+    grid-area: sectionPlaylist4;
+    display: flex;
+    flex-direction: column;
+    animation-name: animate__heartBeat; }
+  .playlist .div2 {
+    animation-name: animate__shakeX;
+    margin-right: 10px; }
+  .playlist div img {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 500px;
+    width: 500px;
+    margin: 0; }
+
+.acercaDe .sectionAcercaDeGuns1 {
+  grid-area: sectionAcercaDeGuns1; }
+
+.acercaDe h2 {
+  margin-top: .5rem;
+  font-size: 70px;
+  font-family: 'Blaka Hollow', cursive; }
+
+.acercaDe p {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem 2.5rem;
+  padding: 1.5rem;
+  border-radius: 20px;
+  background-color: #282525;
+  color: white; }
+
+.acercaDe .sectionAcercaDeGuns2 {
+  grid-area: sectionAcercaDeGuns2; }
+
+.acercaDe ol {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem 2.5rem;
+  padding: 1.5rem 430px;
+  border-radius: 20px;
+  background-color: #282525;
+  color: white;
+  list-style: none; }
+
+.acercaDe .sectionAcercaDeGuns3 {
+  grid-area: sectionAcercaDeGuns3; }
+
+.contacto .sectionContacto1 {
+  grid-area: sectionContacto1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.contacto img {
+  width: 600px; }
+
+.contacto .sectionContacto2 {
+  grid-area: SectionContacto2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.contacto form {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 4rem 1.5rem;
+  border-radius: 20px;
+  background-color: #282525;
+  color: #a4a2a2; }
+  .contacto form:hover {
+    transition: 3s;
+    color: #282525;
+    background-color: #a4a2a2; }
+
+.contacto input {
+  margin: 1rem; }
+  .contacto input:hover {
+    transition: 3s;
+    transform: scale(1.5, 1.5);
+    background-color: black;
+    color: #a4a2a2; }
+
+.contacto textarea {
+  width: 200px;
+  height: 50px;
+  margin: 1rem; }
+  .contacto textarea:hover {
+    transition: 3s;
+    transform: scale(1.5, 1.5);
+    background-color: black;
+    color: #a4a2a2; }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #393a3c;
+  background-image: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M82.42 180h-1.415L0 98.995v-2.827L6.167 90 0 83.833V81.004L81.005 0h2.827L90 6.167 96.167 0H98.996L180 81.005v2.827L173.833 90 180 96.167V98.996L98.995 180h-2.827L90 173.833 83.833 180H82.42zm0-1.414L1.413 97.58 8.994 90l-7.58-7.58L82.42 1.413 90 8.994l7.58-7.58 81.006 81.005-7.58 7.58 7.58 7.58-81.005 81.006-7.58-7.58-7.58 7.58zM175.196 0h-25.832c1.033 2.924 2.616 5.59 4.625 7.868C152.145 9.682 151 12.208 151 15c0 5.523 4.477 10 10 10 1.657 0 3 1.343 3 3v4h16V0h-4.803c.51.883.803 1.907.803 3 0 3.314-2.686 6-6 6s-6-2.686-6-6c0-1.093.292-2.117.803-3h10.394-13.685C161.18.938 161 1.948 161 3v4c-4.418 0-8 3.582-8 8s3.582 8 8 8c2.76 0 5 2.24 5 5v2h4v-4h2v4h4v-4h2v4h2V0h-4.803zm-15.783 0c-.27.954-.414 1.96-.414 3v2.2c-1.25.254-2.414.74-3.447 1.412-1.716-1.93-3.098-4.164-4.054-6.612h7.914zM180 17h-3l2.143-10H180v10zm-30.635 163c-.884-2.502-1.365-5.195-1.365-8 0-13.255 10.748-24 23.99-24H180v32h-30.635zm12.147 0c.5-1.416 1.345-2.67 2.434-3.66l-1.345-1.48c-1.498 1.364-2.62 3.136-3.186 5.14H151.5c-.97-2.48-1.5-5.177-1.5-8 0-12.15 9.84-22 22-22h8v30h-18.488zm13.685 0c-1.037-1.793-2.976-3-5.197-3-2.22 0-4.16 1.207-5.197 3h10.394zM0 148h8.01C21.26 148 32 158.742 32 172c0 2.805-.48 5.498-1.366 8H0v-32zm0 2h8c12.15 0 22 9.847 22 22 0 2.822-.53 5.52-1.5 8h-7.914c-.567-2.004-1.688-3.776-3.187-5.14l-1.346 1.48c1.09.99 1.933 2.244 2.434 3.66H0v-30zm15.197 30c-1.037-1.793-2.976-3-5.197-3-2.22 0-4.16 1.207-5.197 3h10.394zM0 32h16v-4c0-1.657 1.343-3 3-3 5.523 0 10-4.477 10-10 0-2.794-1.145-5.32-2.992-7.134C28.018 5.586 29.6 2.924 30.634 0H0v32zm0-2h2v-4h2v4h4v-4h2v4h4v-2c0-2.76 2.24-5 5-5 4.418 0 8-3.582 8-8s-3.582-8-8-8V3c0-1.052-.18-2.062-.512-3H0v30zM28.5 0c-.954 2.448-2.335 4.683-4.05 6.613-1.035-.672-2.2-1.16-3.45-1.413V3c0-1.04-.144-2.046-.414-3H28.5zM0 17h3L.857 7H0v10zM15.197 0c.51.883.803 1.907.803 3 0 3.314-2.686 6-6 6S4 6.314 4 3c0-1.093.292-2.117.803-3h10.394zM109 115c-1.657 0-3 1.343-3 3v4H74v-4c0-1.657-1.343-3-3-3-5.523 0-10-4.477-10-10 0-2.793 1.145-5.318 2.99-7.132C60.262 93.638 58 88.084 58 82c0-13.255 10.748-24 23.99-24h16.02C111.26 58 122 68.742 122 82c0 6.082-2.263 11.636-5.992 15.866C117.855 99.68 119 102.206 119 105c0 5.523-4.477 10-10 10zm0-2c-2.76 0-5 2.24-5 5v2h-4v-4h-2v4h-4v-4h-2v4h-4v-4h-2v4h-4v-4h-2v4h-4v-2c0-2.76-2.24-5-5-5-4.418 0-8-3.582-8-8s3.582-8 8-8v-4c0-2.64 1.136-5.013 2.946-6.66L72.6 84.86C70.39 86.874 69 89.775 69 93v2.2c-1.25.254-2.414.74-3.447 1.412C62.098 92.727 60 87.61 60 82c0-12.15 9.84-22 22-22h16c12.15 0 22 9.847 22 22 0 5.61-2.097 10.728-5.55 14.613-1.035-.672-2.2-1.16-3.45-1.413V93c0-3.226-1.39-6.127-3.6-8.14l-1.346 1.48C107.864 87.987 109 90.36 109 93v4c4.418 0 8 3.582 8 8s-3.582 8-8 8zM90.857 97L93 107h-6l2.143-10h1.714zM80 99c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm20 0c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6z' fill='%23252627' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  height: 20%; }
+  footer a {
     display: flex;
     justify-content: space-around;
     width: 350px; }
-  
-  .giras th:hover, .giras td:hover {
-    background-color: red; }
-  
-  .playlist h2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 3rem;
-    font-family: 'Blaka Hollow', cursive; }
-  
-  .acercaDe .sectionAcercaDeGuns1, .acercaDe .sectionAcercaDeGuns2, .acercaDe .sectionAcercaDeGuns3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; }
-  
-  header nav {
-    background-color: #b23136;
-    height: 20%; }
-    header nav:hover {
-      background-color: #e8bc0a; }
-  
-  header .nav-link {
-    color: black;
-    font-size: 1.5rem; }
-  
-  header .navbar-brand {
-    color: black;
-    font-size: 1.5rem; }
-  
-  header .nav-link.active {
-    background-color: #e8ab12;
-    color: black;
-    font-size: 1.5rem; }
-  
-  header img {
-    width: 100px;
-    height: 100px;
-    padding: 10px; }
-    header img:hover {
-      transition: 5s;
-      width: 200px;
-      height: 200px; }
-  
-  header a:hover {
-    transition: 3s;
-    transform: rotate(30deg); }
-  
-  .gridIndex {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: .1fr 1fr 1fr .1fr;
-    grid-auto-flow: row;
-    grid-template-areas: "section1 section1"
-   "section2 section2"
-   "section3 section3"
-   "section4 section4"
-   "footer footer";
-    background-image: linear-gradient(#EDE3E4, grey, #444343); }
-  
-  .gridGiras {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr .2r .15fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "table"
-   "sectionGiras1"
-   "footer";
-    background-image: linear-gradient(#EDE3E4, grey, #444343); }
-  
-  .gridPlaylist {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 4fr 1fr 1fr .2fr;
-    grid-auto-flow: row;
-    grid-template-areas: "main"
-   "main"
-   "main"
-   "footer";
-    align-items: stretch;
-    justify-items: stretch; }
-  
-  .gridAcercaDeGuns {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-auto-flow: column;
-    grid-template-areas: "sectionAcercaDeGuns1 sectionAcercaDeGuns1 sectionAcercaDeGuns1"
-   "sectionAcercaDeGuns2 sectionAcercaDeGuns2 sectionAcercaDeGuns2"
-   "sectionAcercaDeGuns3 sectionAcercaDeGuns3 sectionAcercaDeGuns3"; }
-  
-  .gridContacto {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-auto-flow: row;
-    grid-template-areas: "sectionContacto1 sectionContacto1 SectionContacto2 SectionContacto2"
-   "sectionContacto1 sectionContacto1 SectionContacto2 SectionContacto2"
-   "sectionContacto1 sectionContacto1 SectionContacto2 SectionContacto2";
-    background-image: linear-gradient(#EDE3E4, grey, #444343); }
-  
-  @media (max-width: 576px) {
-    .gridIndex {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: .5fr 2fr 2fr 2fr;
-      grid-template-areas: "section1 section1 section1 section1 section1"
-   "section2 section2 section2 section2 section2"
-   "section3 section3 section3 section3 section3"
-   "section4 section4 section4 section4 section4"; }
-    .index div {
-      flex-wrap: wrap !important; }
-    .index img {
-      max-width: 500px; }
-    .gridGiras {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 2fr 3fr;
-      grid-auto-flow: row;
-      grid-template-areas: "table table table table table"
-   "sectionGiras1 sectionGiras1 sectionGiras1 sectionGiras1 sectionGiras1"; }
-    .gridGiras .table {
-      width: 576px; }
-    .gridGiras .table table td {
-      padding: 5px; }
-    .gridGiras .sectionGiras1 img {
-      width: 400px; }
-      .gridGiras .sectionGiras1 img:hover {
-        transition: 3s;
-        transform: scale(1.2, 1.2); }
-    .gridPlaylist {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 8fr 8fr 8fr;
-      grid-template-areas: "main main main"
-   "main main main"
-   "main main main"; }
-    .main {
-      grid-area: main; }
-    .s-1 {
-      flex-direction: column;
-      flex-wrap: wrap;
-      max-width: 576px;
-      padding: 100px; }
-    .s-2 {
-      flex-direction: column;
-      flex-wrap: wrap;
-      max-width: 576px;
-      padding: 0 100px; }
-    .playlist main div div ul {
-      font-size: 1rem; }
-    .Playlist main div div form {
-      font-size: 1rem; }
-    footer {
-      grid-area: footer;
-      max-width: 576px; }
-    footer a img {
-      height: 30px;
-      width: 30px; }
-    .gridAcercaDeGuns {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: .5fr .5fr .5fr;
-      grid-auto-flow: row;
-      grid-template-areas: "sectionAcercaDeGuns1 sectionAcercaDeGuns1 sectionAcercaDeGuns1 sectionAcercaDeGuns1 sectionAcercaDeGuns1"
-   "sectionAcercaDeGuns2 sectionAcercaDeGuns2 sectionAcercaDeGuns2 sectionAcercaDeGuns2 sectionAcercaDeGuns2"
-   "sectionAcercaDeGuns3 sectionAcercaDeGuns3 sectionAcercaDeGuns3 sectionAcercaDeGuns3 sectionAcercaDeGuns3"; }
-    .acercaDe div h2 {
-      font-size: 2rem;
-      margin: 3rem; }
-    .acercaDe div ol {
-      padding: 5rem 0;
-      max-height: 1000px;
-      margin: 0 2rem; }
-    .gridContacto {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 4fr 4fr 4fr;
-      grid-auto-flow: row;
-      grid-template-areas: "sectionContacto2 sectionContacto2 sectionContacto2"
-   "sectionContacto2 sectionContacto2 sectionContacto2"
-   "sectionContacto2 sectionContacto2 sectionContacto2"; }
-    .contacto form {
-      max-width: 500px; }
-    .contacto div img {
-      width: 576px; } }
-  
-  .index .section1 {
-    grid-area: section1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Blaka Hollow', cursive;
-    margin: 50px 0;
-    font-size: 3rem;
-    animation-name: animate__tada; }
-  
-  .index .section2 {
-    grid-area: section2;
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    justify-content: space-around;
-    align-items: stretch;
-    flex-wrap: nowrap; }
-  
-  .index img {
-    height: 400px;
-    width: 700px;
-    margin-bottom: 20px;
-    padding: 2rem; }
-  
-  .index .section3 {
-    grid-area: section3;
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    justify-content: space-around;
-    align-items: stretch;
-    flex-wrap: nowrap; }
-  
-  .index .section4 {
-    grid-area: section4;
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    justify-content: space-around;
-    align-items: stretch;
-    flex-wrap: nowrap; }
-  
-  .giras table {
-    grid-area: table;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    border: black 3px solid;
-    padding: 50px;
-    background-color: burlywood;
-    margin-top: 100px; }
-    .giras table:hover {
-      background-color: grey; }
-  
-  .giras th {
-    border: black 3px solid;
-    padding: 20px; }
-  
-  .giras td {
-    border: black 3px solid;
-    padding: 20px; }
-  
-  .giras .sectionGiras1 {
-    grid-area: sectionGiras1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; }
-  
-  .giras img {
-    height: 700px;
-    margin: 100px 0; }
-    .giras img:hover {
+    footer a:hover {
       transition: 3s;
-      transform: scale(2, 1.2); }
-  
-  .playlist {
-    grid-area: main;
-    display: flex;
-    flex-direction: column; }
-    .playlist .s-1 {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around; }
-    .playlist .s-2 {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around; }
-    .playlist .headerPlaylist {
-      grid-area: headerPlaylist;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
-      font-size: 30px;
-      font-family: 'Anton', sans-serif;
-      margin: 50px 0; }
-    .playlist .sectionPlaylist1 {
-      grid-area: sectionPlaylist1;
-      display: flex;
-      flex-direction: column;
-      animation-name: animate__heartBeat; }
-    .playlist ul {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      margin-left: 2.5rem;
-      font-size: 2rem; }
-    .playlist .div2 {
-      display: flex;
-      flex-direction: row-reverse;
-      animation-name: animate__shakeX; }
-    .playlist form {
-      font-size: 2rem;
-      margin-bottom: 50px; }
-    .playlist input:hover {
-      transition: 3s;
-      transform: scale(3, 3); }
-    .playlist .sectionPlaylist2 {
-      grid-area: sectionPlaylist2;
-      display: flex;
-      flex-direction: column;
-      animation-name: animate__heartBeat; }
-    .playlist .div {
-      margin-right: 10px;
-      animation-name: animate__shakeX; }
-    .playlist .sectionPlaylist2 div img {
-      display: flex;
-      flex-direction: row-reverse; }
-    .playlist .sectionPlaylist3 {
-      grid-area: sectionPlaylist3;
-      display: flex;
-      flex-direction: column;
-      animation-name: animate__heartBeat; }
-    .playlist .div2 {
-      display: flex;
-      flex-direction: row-reverse;
-      animation-name: animate__shakeX; }
-    .playlist .sectionPlaylist4 {
-      grid-area: sectionPlaylist4;
-      display: flex;
-      flex-direction: column;
-      animation-name: animate__heartBeat; }
-    .playlist .div2 {
-      animation-name: animate__shakeX;
-      margin-right: 10px; }
-    .playlist div img {
-      display: flex;
-      flex-direction: row-reverse;
-      height: 500px;
-      width: 500px;
-      margin: 0; }
-  
-  .acercaDe .sectionAcercaDeGuns1 {
-    grid-area: sectionAcercaDeGuns1; }
-  
-  .acercaDe h2 {
-    margin-top: .5rem;
-    font-size: 70px;
-    font-family: 'Blaka Hollow', cursive; }
-  
-  .acercaDe p {
-    font-size: 2rem;
-    text-align: center;
-    margin: 1.5rem 2.5rem;
-    padding: 1.5rem;
-    border-radius: 20px;
-    background-color: #282525;
-    color: white; }
-  
-  .acercaDe .sectionAcercaDeGuns2 {
-    grid-area: sectionAcercaDeGuns2; }
-  
-  .acercaDe ol {
-    font-size: 2rem;
-    text-align: center;
-    margin: 1.5rem 2.5rem;
-    padding: 1.5rem 430px;
-    border-radius: 20px;
-    background-color: #282525;
-    color: white;
-    list-style: none; }
-  
-  .acercaDe .sectionAcercaDeGuns3 {
-    grid-area: sectionAcercaDeGuns3; }
-  
-  .contacto .sectionContacto1 {
-    grid-area: sectionContacto1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center; }
-  
-  .contacto img {
-    width: 600px; }
-  
-  .contacto .sectionContacto2 {
-    grid-area: SectionContacto2;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center; }
-  
-  .contacto form {
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 4rem 1.5rem;
-    border-radius: 20px;
-    background-color: #282525;
-    color: #a4a2a2; }
-    .contacto form:hover {
-      transition: 3s;
-      color: #282525;
-      background-color: #a4a2a2; }
-  
-  .contacto input {
-    margin: 1rem; }
-    .contacto input:hover {
-      transition: 3s;
-      transform: scale(1.5, 1.5);
-      background-color: black;
-      color: #a4a2a2; }
-  
-  .contacto textarea {
-    width: 200px;
+      transform: scale(2, 1.5); }
+  footer img {
+    width: 50px;
     height: 50px;
-    margin: 1rem; }
-    .contacto textarea:hover {
-      transition: 3s;
-      transform: scale(1.5, 1.5);
-      background-color: black;
-      color: #a4a2a2; }
-  
-  footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #252627;
-    height: 20%; }
-    footer a {
-      display: flex;
-      justify-content: space-around;
-      width: 350px; }
-      footer a:hover {
-        transition: 3s;
-        transform: scale(2, 1.5); }
-    footer img {
-      width: 50px;
-      height: 50px;
-      margin: 20px; }
-  
-  body {
-    background-image: linear-gradient(#EDE3E4, grey, #444343); }
-  
+    margin: 20px; }
+
+body {
+  background-image: linear-gradient(#EDE3E4, grey, #444343); }
