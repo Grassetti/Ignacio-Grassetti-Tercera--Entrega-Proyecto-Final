@@ -184,7 +184,7 @@ header a:hover {
   font-size: 3rem;
   animation-name: animate__tada; }
   .index .section1 h1 {
-    font-size: 8rem;
+    font-size: 10vh;
     color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
