@@ -47,13 +47,13 @@
 
 
     textarea {
-        width: 200px;
-        height: 50px;
+        width: 400px;
+        height: 100px;
         margin: 1rem;
 
         &:hover {
             transition: 3s;
-            transform: scale(1.5, 1.5);
+            transform: scale(1.2, 1.5);
             background-color: black;
             color: rgb(164, 162, 162);
         }
