@@ -232,10 +232,12 @@ header a:hover {
   border: black 3px solid;
   padding: 50px;
   background-color: burlywood;
-  overflow: auto;
   margin-top: 100px; }
   .giras table:hover {
     background-color: grey; }
+
+.giras .table {
+  overflow: auto; }
 
 .giras th {
   border: black 3px solid;
