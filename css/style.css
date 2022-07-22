@@ -200,6 +200,7 @@ header a:hover {
   flex-wrap: nowrap; }
 
 .index img {
+  height: 50vh;
   width: 100vh;
   margin-bottom: 5vh;
   padding: 2rem; }
